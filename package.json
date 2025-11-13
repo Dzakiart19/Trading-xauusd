@@ -1,0 +1,29 @@
+{
+  "name": "xauusd-telegram-bot",
+  "version": "0.1.0",
+  "description": "Telegram bot that monitors XAU/USD and sends signals with SL/TP and chart images",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@polygon.io/client-js": "^2.0.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "technicalindicators": "^3.0.16",
+    "telegraf": "^4.12.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.17.18",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.6"
+  }
+}
